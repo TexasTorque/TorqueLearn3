@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main  # or "master" depending on your repo
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    nested: 
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

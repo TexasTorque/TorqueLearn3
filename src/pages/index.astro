@@ -1,0 +1,46 @@
+---
+import Header from "../components/header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Torque Learn - Home</title>
+    </head>
+    <body>
+        <Header />
+        <div class="item">
+            <p>
+                Welcome to Texas Torque! Everyone, from rookies to experienced,
+                may need something to reference. Hence, Torque Learn! This wiki
+                is managed by everyone for whatever you need.
+            </p>
+            <p>
+                If you wish to contribute, talk to your subsection mentor or Mr.
+                Wolf.
+            </p>
+            <br />
+            <a href="/cad">link</a>
+        </div>
+    </body>
+</html>
+
+<style>
+    .item {
+        border-radius: 1em;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        padding: 2%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    a {
+        color: rgb(100, 149, 237);
+    }
+</style>
