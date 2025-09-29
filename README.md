@@ -1,46 +1,19 @@
-# Astro Starter Kit: Basics
+# TorqueLearn v2
+A rookie's guide to Torque and the skills required for it.
 
-```sh
-npm create astro@latest -- --template basics
-```
+# Running Server
+Netlify hosts this server through the Texas Torque GitHub. Hence, only pushing to the Master branch will enact any changes.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Development
+TorqueLearn3 is built on Astro, a HTML/CSS/JavaScript framework. It can be installed through *npm*. Instruction can be found [here](https://docs.astro.build/en/install-and-setup/).
 
-## 🚀 Project Structure
+### Launching
+To launch a dev server, navigate to the root folder and run the command `npm run dev`. This will establish a localhost:4321 server. This website will automatically update upon file changes and will display any crash errors on the website.
 
-Inside of your Astro project, you'll see the following folders and files:
+Other devices can connect to this through standard port forwarding.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### Contribution
+After I (Davis Jenney) have graduated, I will very likely not be able to participate in its facilitation and development. Hence, Decap CMS and Netlify have been used. Subsection mentors and Mr. Wolf (or any permitted individual) can add information to the wiki through adding, editing, or removing pages. This is password protected and all authors are documented, alongside a time and date. GitHub also stores any previous versions that can be restored if need be. Documentation for Decap CMS can be found [here](https://decapcms.org/docs/intro/).
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# Authors
+[Davis Jenney](https://github.com/OrangeTurtle77) (2023-2027)
