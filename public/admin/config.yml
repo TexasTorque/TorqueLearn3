@@ -1,21 +1,17 @@
 backend:
   name: git-gateway
-  branch: main  # or "master" depending on your repo
+  branch: master
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "src/assets/uploads"
+public_folder: "src/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "src/"
+  - name: "cad_pages"
+    label: "Cad Pages"
+    folder: "src/content/cad"
     create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    nested: 
-      depth: 2
-      summary: "{{title}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { Lavel: "Date", name: "date", widget: "datetime" }
+      - { Label: "Author", name: "author", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }

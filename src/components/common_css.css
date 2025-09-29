@@ -1,0 +1,19 @@
+.item {
+    border-radius: 1em;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 2%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    width: auto
+}
+
+a {
+    color: rgb(100, 149, 237);
+}
+
+img {
+    height: auto;
+    width: auto;
+    border-radius: 1em;
+}
