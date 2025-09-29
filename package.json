@@ -1,14 +1,15 @@
 {
-  "name": "torque-learn-cms",
-  "version": "1.0.0",
+  "name": "torque-learn-3",
   "type": "module",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "astro": "5.13.17",
-    "zod": "^3.25.0"
+    "astro": "^5.13.7",
+    "decap-cms-app": "^3.8.3"
   }
 }
