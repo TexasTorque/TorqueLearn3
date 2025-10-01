@@ -1,3 +1,9 @@
+---
+title: "Bang Bang"
+date: 2025-09-29
+author: "???"
+---
+
 # Bang-bang
 
 Too lazy to make a PID? Bang-bang is perfect for you.

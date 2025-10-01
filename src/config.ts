@@ -39,10 +39,20 @@ const mechanicalCollection = defineCollection({
     })
 });
 
+const otherCollection = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/other" }),
+    schema: z.object({
+        title: z.string(),
+        date: z.date(),
+        author: z.string()
+    })
+});
+
 
 export const collections = { 
     cad: cadCollection ,
-    coding: null,
-    electrical: null,
-    mechanical: null
+    coding: codingCollection,
+    electrical: electricalCollection,
+    mechanical: mechanicalCollection,
+    other: otherCollection
 };

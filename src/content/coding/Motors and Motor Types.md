@@ -1,3 +1,9 @@
+---
+title: "Motors and Motor Types"
+date: 2025-09-29
+author: "???"
+---
+
 # Motors and Motor Types
 
 ### Brands and Models

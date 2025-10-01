@@ -1,3 +1,9 @@
+---
+title: "Introductory Git"
+date: 2025-09-29
+author: "Jack Pittenger"
+---
+
 # Introductory Git
 
 ## Git
@@ -101,9 +107,3 @@ You can initially pull the code of submodules using the following
 You can update submodules using the following
 
 `git submodule update --remote --merge`
-
-## Credits
-
-Initially written by [Jack Pittenger](https://github.com/realSaddy) in November 2020
-
-Relocated by [Justus Languell](https://github.com/Juicestus) in September 2021

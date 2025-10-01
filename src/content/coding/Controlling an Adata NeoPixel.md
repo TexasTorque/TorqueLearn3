@@ -1,3 +1,9 @@
+---
+title: "Controlling an Adata NeoPixel"
+date: 2025-09-29
+author: "???"
+---
+
 # Controlling an Adata NeoPixel
 
 ## What you need

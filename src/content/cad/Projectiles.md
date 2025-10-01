@@ -2,7 +2,6 @@
 title: "Projectiles"
 date: 2025-09-29
 author: "Michael Menezes"
-slug: "projectiles"
 ---
 
 
@@ -26,7 +25,7 @@ In FRC, robots are often tasked with launching projectiles. Understanding how a 
 
 In a vacuum, gravity is the only force acting on the projectile, although the projectile may have some initial horizontal and vertical velocities.
 
-![Projectile Motion Diagram](/static/imgs/CAD/ProjectileMotionDiagram.gif)
+![Projectile Motion Diagram](../../assets/imgs/CAD/ProjectileMotionDiagram.gif)
 
 Net force equations:
 $$F_x=0$$
@@ -101,7 +100,7 @@ _k_ is basically a fudge factor that needs to be determined experimentally or fo
 The density of air: 1.225 kg/m^3
 
 CD:
-![Complex Dependencies Reference](/static/imgs/CAD/DragCoefficientTable.png)
+![Complex Dependencies Reference](../../assets/imgs/CAD/DragCoefficientTable.png)
 
 Linear drag has a closed form for its equations of motion while quadratic drag does not and must be found using numerical approximations like Euler's method.
 
@@ -123,8 +122,8 @@ Since I do not understand the math, this section will only provide how I underst
 
 Some reference images:
 
-![Magnus Effect Static Diagram](/static/imgs/CAD/MagnusEffectStationaryDiagram.png)
-![Magnus Effect Animation](/static/imgs/CAD/MagnusEffectAnimatedDiagram.gif)
+![Magnus Effect Static Diagram](../../assets/imgs/CAD/MagnusEffectStationaryDiagram.png)
+![Magnus Effect Animation](../../assets/imgs/CAD/MagnusEffectAnimatedDiagram.gif)
 
 My shortcut yet likely flawed way to remembering the direction of the effect:
 
@@ -136,7 +135,7 @@ Behind the projectile is a turbulent region of air. This region of air is "harde
 
 This phenomenon is reflected by the wobble of spinning tops.
 
-![Precession Diagram](/layout/static/imgs/CAD/PrecessionDiagram.png)
+![Precession Diagram](/layout../../assets/imgs/CAD/PrecessionDiagram.png)
 
 From an intermediate step in the above derivation:
 
@@ -169,7 +168,3 @@ For a frisbee, nutation would be caused by drag.
 For a football, by gravity.
 
 For a ball with forward/backspin and experiencing precession, nutation would be caused by both drag and gravity.
-
-## Credits
-
-Initially written by [Michael Menezes](https://github.com/Menezmic21/) in September 2021

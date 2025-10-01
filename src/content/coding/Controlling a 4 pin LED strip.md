@@ -1,3 +1,9 @@
+---
+title: "Controlling a 4 pin LED strip"
+date: 2025-09-29
+author: "???"
+---
+
 # Controlling a 4 pin LED strip
 
 If your LED strip has 4 pins, RGB and a Ground, this is probably the right way.

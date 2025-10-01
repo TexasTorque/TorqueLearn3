@@ -1,3 +1,9 @@
+---
+title: "How to Install FRC Gametools and Deploy"
+date: 2025-09-29
+author: "Suhas Guddeti"
+---
+
 # Installing and Using FRC Gametools
 
 FRC Gametools allow you to communicate and interact with your robot. FRC Gametools is a Windows-only software, which cannot run on Mac. To download Gametools, head to [NI downloads](https://www.ni.com/en-us/support/downloads/drivers/download.frc-game-tools.html), and install the software. FRC Driver Station, a software that comes with the Gametools download, is what allows you to connect to your robot. To connect your robot to your laptop, follow the rules below:
@@ -17,7 +23,3 @@ FRC Gametools allow you to communicate and interact with your robot. FRC Gametoo
 7. After your computer is connected to your controller, go back to the main icon on the control panel. This is where you will enable your robot. Before you enable it, you MUST yell "CLEAR!" This will tell everyone that your robot is on and they will exit the field. To enable, press the green Enable button.
 
 8. You are now free to control your robot. If you would like to pause or stop controlling the robot, just click the Disable button on your Driver Station Window.
-
-## Credits
-
-Initially written by [Suhas Guddeti](https://github.com/Suhas44) in August 2021

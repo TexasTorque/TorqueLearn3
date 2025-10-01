@@ -1,3 +1,9 @@
+---
+title: "Jack's Plan for Success"
+date: 2025-09-29
+author: "Jack Pittenger"
+---
+
 # Jack's Plan for Success
 
 During a competition, programmers are usually only given a couple days with the robot to get it fully operational. As such, it is imperative to create a streamlined development procedure.

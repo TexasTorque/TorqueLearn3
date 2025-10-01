@@ -1,6 +1,12 @@
+---
+title: "Style Guide"
+date: 2025-09-29
+author: "Jusus Languell"
+---
+
 # Texas Torque Java Style Guide
 
-By [Justus Languell](https://www.justusl.com/), loosely based of the [Google Java Sytle Guide](https://google.github.io/styleguide/javaguide.html), with a lot of personal opinion.
+Loosely based of the [Google Java Sytle Guide](https://google.github.io/styleguide/javaguide.html), with a lot of personal opinion.
 
 ## Contents
 

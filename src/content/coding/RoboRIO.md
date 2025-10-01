@@ -1,3 +1,9 @@
+---
+title: "RoboRIO"
+date: 2025-09-29
+author: "Omar Afzal"
+---
+
 # RoboRIO
 
 ![RoboRIO](/static/imgs/vendors/roborio.png)
@@ -25,7 +31,3 @@ Recently, there have been some issues updating firmware or reformatting a RoboRI
 ## Setting Team Number
 
 To change the team number of a roboRIO, first turn it on and connect it to your computer via a USB B cable. Now open up the roboRIO imaging software and click on the Team Number box and enter your number. Now click on Edit Startup Settings and then you can enter your team number in the box above it. Now when you hit apply it will reset the roboRIOs team number. It is important to use the correct number otherwise your driverstation will be unable to connect and you won't be able to deploy code from VSCode. Note: If you are changing a team number other than the default, 0000, the first time you try to change it it will only change the roboRIOs team number to 0000. You will need to apply the change a second time in order for a new number to take effect.
-
-## Credits
-
-Initially written by [Omar Afzal](https://github.com/0mara) in November 2021

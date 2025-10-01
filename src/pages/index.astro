@@ -1,6 +1,13 @@
 ---
 import Header from "../components/header.astro";
 import "../components/common_css.css";
+import { getCollection } from "astro:content";
+
+const cad = await getCollection("cad");
+const coding = await getCollection("coding");
+const electrical = await getCollection("electrical");
+const mechanical = await getCollection("mechanical");
+const other = await getCollection("other");
 ---
 
 <!doctype html>
@@ -24,8 +31,79 @@ import "../components/common_css.css";
                 If you wish to contribute, talk to your subsection mentor or Mr.
                 Wolf.
             </p>
-            <br />
-            <a href="/cad">link</a>
+        </div>
+
+        <div class="item" style="margin-top: 0.1em">
+            <table style="width: 100%">
+                <colgroup>
+                    <col style="width: 50%" />
+                    <col style="width: 50%" />
+                </colgroup>
+
+                <tr>
+                    <td>
+                        <h2>CAD Lessons</h2>
+                        <ul>
+                            {
+                                cad.map((entry) => (
+                                    <li>
+                                        <a href={`/cad/${entry.slug}/`}>
+                                            {entry.data.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </td>
+
+                    <td>
+                        <h2>Coding Lessons</h2>
+                        <ul>
+                            {
+                                coding.map((entry) => (
+                                    <li>
+                                        <a href={`/coding/${entry.slug}/`}>
+                                            {entry.data.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2>Mechanical Lessons</h2>
+                        <ul>
+                            {
+                                mechanical.map((entry) => (
+                                    <li>
+                                        <a href={`/mechanical/${entry.slug}/`}>
+                                            {entry.data.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </td>
+
+                    <td>
+                        <h2>Other Lessons</h2>
+                        <ul>
+                            {
+                                other.map((entry) => (
+                                    <li>
+                                        <a href={`/other/${entry.slug}/`}>
+                                            {entry.data.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

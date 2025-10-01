@@ -2,7 +2,6 @@
 title: "Elevators"
 date: 2025-09-29
 author: "Michael Menezes"
-slug: "elevators"
 ---
 
 
@@ -24,7 +23,7 @@ Elevators are an essential part of any FRC toolkit. They facilitate moving game 
 
 Elevators generally come in two styles of rigging: continuous and cascaded.
 
-![Elevator Rigging Diagram](/static/imgs/CAD/ElevatorRiggingDiagram.jpg)
+![Elevator Rigging Diagram](../../assets/imgs/CAD/ElevatorRiggingDiagram.jpg)
 
 Both can be powered up and down although it may useful to just let gravity or a spring return the elevator. Continuous elevators spool sting on the up run (the motion as the elevator moves up) and the down run (the motion as the elevator moves down) at the same rate. Cascades don't. The spool for an up run may need to spin at different rate compared to the down run or have a different diameter. Cascades are typically faster than a continuous but they also require more torque. Cascades are made by connecting each stage with a separate piece of string while continuous uses one long piece.
 
@@ -36,7 +35,7 @@ Both can be powered up and down although it may useful to just let gravity or a 
 
 **Cascade:**
 
-![Cascade Elevator Diagram](/static/imgs/CAD/CascadeElevatorDiagram.png)
+![Cascade Elevator Diagram](../../assets/imgs/CAD/CascadeElevatorDiagram.png)
 
 In the image above the numbers refer to "objects." Object 0 is the force generator: a weight, a gearbox, etc. Objects 1 through 3 are elevator frames and object 4 is the carriage. A three stage elevator is depicted as there are three moving stages.
 
@@ -104,7 +103,3 @@ If object 0 was replaced by a winch, find the Torque needed to move the elevator
 Generalizing for n stages:
 
 $\tau=m_2r(a_{n+1}(\frac{L_1}{L_1+L_2+...+L_n})+g)+2m_3r(a_{n+1}(\frac{L_1+L_2}{L_1+L_2+...+L_n})+g)+...+2^{n-1}m_{n+1}r(a_{n+1}(\frac{L_1+L_2+...+L_m}{L_1+L_2+...+L_n})+g)$
-
-## Credits
-
-Initially written by [Michael Menezes](https://github.com/Menezmic21/) in September 2021

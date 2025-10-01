@@ -1,3 +1,9 @@
+---
+title: "How to use Liveshare"
+date: 2025-09-29
+author: "Suhas Guddeti"
+---
+
 # How to use LiveShare
 
 LiveShare is a real-time coding collaboration software developed by Microsoft to use in Visual Studio Code. LiveShare is very handy when multiple people need to work on a project simultaneously. Everyone on the LiveShare can read and edit code while seeing what others are working on.
@@ -10,8 +16,3 @@ To open a liveshare, open the project you'd like to work on and go to the LiveSh
 
 ## Managing the LiveShare
 When users enter the session, the host will have to accept them in with either "Read-Write" or "Read-Only" permissions. The host must always be connected to the internet, otherwise, the LiveShare will end. This is particularly a problem when the host is also the Driver Station for robot deployment. To circumvent this, try having a seperate device for the LiveShare host and the Driver Station. If this isn't a possibility, the host will have to restart the session after they connect to the Internet.
-
-
-## Credits
-
-Initially written by [Suhas Guddeti](https://github.com/Suhas44) in December 2021

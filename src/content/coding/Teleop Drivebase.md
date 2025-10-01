@@ -1,3 +1,9 @@
+---
+title: "Teleop Drivebase"
+date: 2025-09-29
+author: "Justus Languell"
+---
+
 # Diagram of a Simple Teleoperated Drivebase
 
 ![SimpleTeleopDriveBase](/static/imgs/SimpleTeleopDriveBase.png)

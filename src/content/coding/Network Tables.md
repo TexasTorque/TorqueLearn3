@@ -1,3 +1,9 @@
+---
+title: "Network Tables"
+date: 2025-09-29
+author: "???"
+---
+
 # Network Tables
 
 Some basic examples to get you started in various languagues with Network Tables (as a client)

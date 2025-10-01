@@ -2,7 +2,6 @@
 title: "Arms"
 date: 2025-09-29
 author: "Michael Menezes"
-slug: "arms"
 ---
 
 
@@ -24,7 +23,7 @@ Arms can be a cool way to move pieces vertically and are often lighter than an e
 
 A 4 bar is a type of linkage that consists of (you guessed it) four bars. When connected at movable joints like in the image below, the output member stays parallel as the beams form a parallelogram.
 
-![Four Bar Diagram](/static/imgs/CAD/FourBarDiagram.png)
+![Four Bar Diagram](../../assets/imgs/CAD/FourBarDiagram.png)
 
 4 bars can consist of beams that are not of corresponding length. In these cases, the motion of the system is more complex.
 
@@ -34,7 +33,7 @@ A 4 bar is a type of linkage that consists of (you guessed it) four bars. When c
 
 A virtual 4 bar replaces the parallel bars with a loop. This loop is typically made of chain and is connected by sprockets. When designed with clearances in mind, virtual 4 bars can go past vertical--giving the virtual 4 bar a larger range of motion.
 
-![Virtual Four Bar Diagram](/static/imgs/CAD/VirtualFourBarDiagram.jpeg)
+![Virtual Four Bar Diagram](../../assets/imgs/CAD/VirtualFourBarDiagram.jpeg)
 
 Key points of a virtual 4 bar:
 
@@ -54,7 +53,7 @@ When sprockets are chained together, they act similarly to gears (except they do
 
 By inspection of a standard virtual 4 bar, it may seem like the sprockets are not rotating when in fact they are rotating relative to the bar that connects them. The diagram below demonstrates how a weighted 4 bar would function with angles measured relative to the bar.
 
-![Weighted Virtual Four Bar Diagram](/static/imgs/CAD/WeightedFourBarDiagram.png)
+![Weighted Virtual Four Bar Diagram](../../assets/imgs/CAD/WeightedFourBarDiagram.png)
 
 Let: the base sprocket be indicated by 1 and the wrist sprocket by 2
 $$v_1=v_2$$
@@ -74,7 +73,7 @@ I want to design an arm that can:
 1) Position a game piece level to the ground when the arm is horizontal
 2) Position a game piece at 45 degrees above the horizontal when the arm is at max heigh (vertical)
 
-Alright, our first constraint can be taken care of simply by fastening the manipulator to the wrist while the arm is in that position. The second constraint gives us the angle the wrist should be to the horizontal as 45 degrees $\theta_1-\theta_2$ and the angle the arm makes as 90 degrees $\theta_1.$
+Alright, our first constraint can be taken care of simply by fastening the manipulator to the wrist while the arm is in that position. The second constraint gives us the angle the wrist should be to the horizontal as 45 degrees $\theta_1-\theta_2$ and the angle the arm makes as 90 degrees $ \theta_1 $.
 
 So:
 $$90 - \theta_2=45$$
@@ -86,7 +85,3 @@ $$r_1(90)=r_2(45)$$
 $$r_1=\frac{45}{90}r_2$$
 
 We do not have enough information to find the exact tooth counts but we do know that the base sprocket must be half the size of the wrist sprocket. The exact size can be whatever is most convenient like maybe 50 T and 100 T or 20 T and 40 T, etc.
-
-## Credits
-
-Initially written by [Michael Menezes](https://github.com/Menezmic21/) in September 2021

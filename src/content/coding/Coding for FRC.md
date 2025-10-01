@@ -1,6 +1,10 @@
-# Coding for FRC
+---
+title: "Coding for FRC"
+date: 2025-09-29
+author: "???"
+---
 
-**NOTE: This is *very* unfinished, sorry...**
+# Coding for FRC
 
 Before we program a robot, we are going to need a tour of the FRC Programming Enviorment. FRC uses a library called [WPILib](https://docs.wpilib.org/en/stable/) to manage the enviorment.
 

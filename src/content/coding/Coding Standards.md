@@ -1,3 +1,9 @@
+---
+title: "Coding Standards"
+date: 2025-09-29
+author: "Justus Languell"
+---
+
 # Programming style and best practices
 
 ## Important Advice

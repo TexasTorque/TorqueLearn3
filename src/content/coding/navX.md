@@ -1,3 +1,9 @@
+---
+title: "navX"
+date: 2025-09-29
+author: "???"
+---
+
 # navX
 
 The navX is an integrated accelerometer, gyroscope, and magnetometer that allows tracking the position of the robot.

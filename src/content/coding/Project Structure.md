@@ -1,3 +1,9 @@
+---
+title: "Project Structure"
+date: 2025-09-29
+author: "Suhas Guddeti"
+---
+
 # Project Structure
 
 To control and code the robot, you should know where the critical components are. There are 3 main folders: Constants, Inputs and Subsystems.
@@ -19,7 +25,3 @@ if (controller.getLeftTrigger()) {
 ```
 
 The above code checks if we are pressing the left trigger on the controller. If we are, we are telling the robot to start the shooting sequence. Most of the input methods are structured like this, though not exactly.
-
-## Credits
-
-Initially written by [Suhas Guddeti](https://github.com/Suhas44) in August 2021

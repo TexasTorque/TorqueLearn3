@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Header from "../../components/header.astro";
+import "../../components/common_css.css";
+
+export async function getStaticPaths() {
+    const collection = await getCollection("other");
+    return collection.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+// 4. Render the entry to HTML in the template
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<html>
+    <head>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
+    </head>
+    <body>
+        <Header />
+
+        <div class="item">
+            <Content />
+        </div>
+    </body>
+</html>

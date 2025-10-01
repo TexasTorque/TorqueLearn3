@@ -2,7 +2,6 @@
 title: "Partial Derivatives"
 date: 2025-09-29
 author: "Michael Menezes"
-slug: "partial-derivatives"
 ---
 
 
@@ -76,7 +75,7 @@ Finally, we can conclude that increasing the base sprocket will increase the wri
 
 **Relevance:** The multivariate chain rule allows one to find the rate of change of nested functions much like the univariate chain rule.
 
-![Partial Derivative Tree Diagram](/layout/static/imgs/CAD/PartialDerivativeTreeDiagram.jpg)
+![Partial Derivative Tree Diagram](../../assets/imgs/CAD/PartialDerivativeTreeDiagram.jpg)
 
 The above diagram shows a function z that is a function of x and y which are both functions of s and t: $z=f(x(s, t), y(s, t))$.
 
@@ -137,11 +136,3 @@ $$-\frac{\theta_1}{r_2}>-\frac{r_1\theta_1}{r_2^2}$$
 $$r_2<r_1$$
 
 We can conclude that increasing the base sprocket will increase the wrist to ground angle faster if the wrist sprocket is smaller than the base sprocket. Otherwise, when the wrist sprocket is larger than the base sprocket, decreasing the wrist sprocket will increase the wrist to ground angle faster.
-
-### Implicit Differentiation
-
-**Relevance:** TBD
-
-## Credits
-
-Initially written by [Michael Menezes](https://github.com/Menezmic21/) in December 2021

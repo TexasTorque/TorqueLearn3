@@ -1,3 +1,9 @@
+---
+title: "Battery Safety"
+date: 2025-09-29
+author: "???"
+---
+
 # Battery Safety
 
 Batteries carry the most potential risk of any robot component. They contain a large amount of sulfuric acid which is toxic and flammable. This article will explain how to mitigate and manage the risk assoociated with batteries.

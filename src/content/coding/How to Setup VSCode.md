@@ -1,3 +1,9 @@
+---
+title: "How to Setup VSCode"
+date: 2025-09-29
+author: "Justus Languell"
+---
+
 # Configuring Visual Studio Code
 
 **Note, VS Code Docs located [here](https://code.visualstudio.com/docs), please use this for questions**
@@ -47,7 +53,3 @@ Sign in to Visual Studio with Github. This allows you to access Git functions in
 ## WPILib
 
 WPILib extension will add a red "W" hexagon shaped button in the top right of the editor pane. You can use that, or use the command pallet to access all of the WPILib exetensions.
-
-## Credits
-
-Initially written by [Justus Languell](https://github.com/Juicestus) in August 2021

@@ -1,3 +1,9 @@
+---
+title: "Pneumatics and Solenoids"
+date: 2025-09-29
+author: "Pneumatics and Solenoids"
+---
+
 # Pneumatics and Solenoids
 
 Pneumatics are pressurized air cylinders that are controlled by solenoids to either extend or retract. They are powered by compressors and can be used all over a robot to perform a variety of tasks. The difference between the two is that a double solenoid can be manually retracted from the extended position and also be set off, whereas a single solenoid will only be able to push out and when the solenoid is set to 0 it will retract.

@@ -1,3 +1,9 @@
+---
+title: "Feed Forward"
+date: 2025-09-29
+author: "Jack Pittenger"
+---
+
 # Feed Forward
 
 ## Feed Forward versus Feedback
@@ -14,14 +20,10 @@ A normal feed forward controller takes in two to three values for the model: $k_
 
 It is important for those implementing control systems to have a healthy understanding of physics. As such, this will not go in depth for the reason.
 
-In a nutshell, however, two connecting objects that contain a normal force exert a frictional force. There are two types of frictional forces, static and kinetic. Each type has its own coefficient of friction, μ. Static friction exists until a slipping point is reached, at which point kinetic friction takes over. This is due to intermolecular forces soft-binding objects at the subatomic level.
+In a nutshell, however, two connecting objects that contain a normal force exert a frictional force. There are two types of frictional forces, static and kinetic. Each type has its own coefficient of friction, μ. Static friction exists  at which point kinetic friction takes over. This is due to intermolecular forces soft-binding objects at the subatomic level.
 
 For many applications of PID, you may have witnessed the error term existing but nothing happening. This is due to static friction: despite putting in energy, the static friction is preventing movement. The $k_s$ term overcomes this by always keeping the model near or at the slipping point to provide fast changes in velocity.
 
 ## Calculating feed forward values
 
 Feed forward values should **not** be calculated emperically. Proper characterization is needed. Additionally, dimensional analysis must be used to insure proper unit conversion, as output values are unit dependent.
-
-## Credits
-
-Initially written by [Jack Pittenger](https://github.com/realSaddy) in February 2022

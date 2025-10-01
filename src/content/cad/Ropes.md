@@ -2,7 +2,6 @@
 title: "Ropes"
 date: 2025-09-29
 author: "Michael Menezes"
-slug: "ropes"
 ---
 
 # Ropes
@@ -120,7 +119,3 @@ Note: Theta can be a function of t.
 <iframe src="https://www.geogebra.org/3d/x2rvhnrq?embed" width="70%" height="750" allowfullscreen style="border: 1px solid #ccc" frameborder=0></iframe>
 
 Note: Use the scroll wheel and left mouse button to navigate. Press the house shaped home button if the graph gets lost. Try altering $\theta(t)$
-
-## Credits
-
-Initially written by [Michael Menezes](https://github.com/Menezmic21/) in September 2021

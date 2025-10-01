@@ -1,3 +1,9 @@
+---
+title: "Arduino"
+date: 2025-09-29
+author: "???"
+---
+
 # Starting Arduino
 
 A basic programming-focused starter's guide to Arduino! You'll need a two terminal button, like shown below, an Arduino, a computer, Arduino jumpers, and some wire strippers.

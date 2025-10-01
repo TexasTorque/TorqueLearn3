@@ -1,3 +1,9 @@
+---
+title: "Motor Controllers"
+date: 2025-09-29
+author: "Omar Afzal"
+---
+
 # Motor Controllers
 
 ### What are PWM Motor Controllers?
@@ -23,7 +29,3 @@ leftDB1.addFollower(Ports.LEFT_DB_2);
 
 -   Problem: The motor is moving strangely (Rolling after input is false, stuttering, etc.)
     -Solution: Try to reconfigure the PID
-
-## Credits
-
-Initially written by [Omar Afzal](https://github.com/0mara) in October 2021

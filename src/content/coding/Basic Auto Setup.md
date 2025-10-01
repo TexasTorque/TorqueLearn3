@@ -1,3 +1,9 @@
+---
+title: "Basic Auto Setup"
+date: 2025-09-29
+author: "Omar Afzal"
+---
+
 # How To Program Autonomous
 
 Programming autonomous is one of the core parts of FRC, and along with that, one of the most complex and challenging. However, if you research enough code and learn enough to understand about the systems that are used at Torque, you would be surprised at how fast and simple it really is.

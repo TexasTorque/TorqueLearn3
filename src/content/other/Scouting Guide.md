@@ -1,3 +1,9 @@
+---
+title: "Scouting Guide"
+date: 2025-09-29
+author: "???"
+---
+
 # Scouting Guide
 
 Here's a guide to scouting. Tips and tricks.

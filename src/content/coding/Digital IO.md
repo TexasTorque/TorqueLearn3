@@ -1,3 +1,9 @@
+---
+title: "Digital IO"
+date: 2025-09-29
+author: "???"
+---
+
 # Using RoboRIO DIO
 
 This is a tutorial on how to output the Digital I/O (DIO) pins on the RoboRIO, and accept input on an Arduino.

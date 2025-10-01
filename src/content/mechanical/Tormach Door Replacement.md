@@ -1,3 +1,9 @@
+---
+title: "Tormach Door Replacement"
+date: 2025-09-29
+author: "Max Volanski"
+---
+
 # Tormach Door Replacment
 
 ## Removing Doors
@@ -11,7 +17,3 @@ When ataching the platic portion of the door allign the polcarbonate peice with 
 
 ## Reattching Doors
 To rettach the doors first align the I-bolts to the holes in the frame, then tighten the 9/16 nuts. The doors may need adjustment in either height or level to ride smothly and mate correctly. This can be done by raising or lowering the top nut then loosening or tightening the bottom nut as neccecaary, until the correct height or level is achived. The side doors will need to lifted to the top of the machine to be reinserted. It may be nesecary to have a secound person help to align the doors with the interior tracks.
-
-## Credits
-
-Initially written by [Max Volanski](https://github.com/JJ48) in December 2021

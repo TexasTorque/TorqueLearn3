@@ -1,3 +1,9 @@
+---
+title: "PID"
+date: 2025-09-29
+author: "Jack Pittenger"
+---
+
 # PID
 
 PID _(Proportional-Integral-Derivative)_ is a continuous feedback loop that attempts to reach a certain real-life encoder value.
