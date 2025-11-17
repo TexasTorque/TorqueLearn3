@@ -23,7 +23,7 @@ Gears are a simple yet effective way to transfer rotational power. Gears are use
 
 Gears have an intrinsic property known as diametral pitch *dp*. The diametral pitch is defined as the the number of teeth on a gear *T* divided by the pitch diameter *D*. Intuitively, diametral pitch can be understood as a conversion factor from diameter to tooth count. The pitch diameter is the diameter of a circle that intersects the teeth on the gear in the middle of the tooth height (technically it is when the tooth width is the same as the spacing between the teeth). Pitch diameter is easier explained with an image:
 
-![Thread Diagram](../../assets/imgs/CAD/ThreadDiagram.gif)
+![Thread Diagram](../../assets/imgs/ThreadDiagram.gif)
 
 Finding the diameter of a gear from dp:
 $$dp=\text{teeth}/\text{diameter}$$
@@ -44,7 +44,7 @@ $$rd=\frac{T_1+T_2}{2dp}+0.008$$
 
 Gear are typically arranged in two ways: side by side, or stacked.
 
-![Gear Arrangement Diagram](../../assets/imgs/CAD/GearArrangementDiagram.gif)
+![Gear Arrangement Diagram](../../assets/imgs/GearArrangementDiagram.gif)
 
 When gears are stacked, they have the same rotational velocity $\omega$. When gears are side by side, they have the same tangential speed $|v|$.
 
@@ -97,7 +97,7 @@ $$\vec{\tau}=\vec{r}\times \vec{F}$$
 $$\tau_0=\tau_1$$
 Since adjacent gears are touching at a point: $F_1=F_2=F_{12}$
 
-![Gear Torque Diagram](../../assets/imgs/CAD/GearTorqueDiagram.png)
+![Gear Torque Diagram](../../assets/imgs/GearTorqueDiagram.png)
 
 $$F_{12}=\tau_1/r_1$$
 $$\tau_2=-F_{12}r_2$$

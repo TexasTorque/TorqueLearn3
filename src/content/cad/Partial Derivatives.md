@@ -75,7 +75,7 @@ Finally, we can conclude that increasing the base sprocket will increase the wri
 
 **Relevance:** The multivariate chain rule allows one to find the rate of change of nested functions much like the univariate chain rule.
 
-![Partial Derivative Tree Diagram](../../assets/imgs/CAD/PartialDerivativeTreeDiagram.jpg)
+![Partial Derivative Tree Diagram](../../assets/imgs/PartialDerivativeTreeDiagram.jpg)
 
 The above diagram shows a function z that is a function of x and y which are both functions of s and t: $z=f(x(s, t), y(s, t))$.
 

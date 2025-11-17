@@ -1,14 +1,43 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: TexasTorque/TorqueLearn3
+  auth_type: implicit
 
-media_folder: "src/assets/uploads"
-public_folder: "src/assets/uploads"
+media_folder: "public/imgs"
+public_folder: "/imgs"
 
 collections:
   - name: "cad_pages"
     label: "Cad Pages"
     folder: "src/content/cad"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { Lavel: "Date", name: "date", widget: "datetime" }
+      - { Label: "Author", name: "author", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "coding_pages"
+    label: "Coding Pages"
+    folder: "src/content/coding"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { Lavel: "Date", name: "date", widget: "datetime" }
+      - { Label: "Author", name: "author", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "mechanical_pages"
+    label: "Mechanical Pages"
+    folder: "src/content/mechanical"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { Lavel: "Date", name: "date", widget: "datetime" }
+      - { Label: "Author", name: "author", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "other_pages"
+    label: "Other Pages"
+    folder: "src/content/other"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }

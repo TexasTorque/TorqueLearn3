@@ -25,7 +25,7 @@ In FRC, robots are often tasked with launching projectiles. Understanding how a 
 
 In a vacuum, gravity is the only force acting on the projectile, although the projectile may have some initial horizontal and vertical velocities.
 
-![Projectile Motion Diagram](../../assets/imgs/CAD/ProjectileMotionDiagram.gif)
+![Projectile Motion Diagram](../../assets/imgs/ProjectileMotionDiagram.gif)
 
 Net force equations:
 $$F_x=0$$
@@ -100,7 +100,7 @@ _k_ is basically a fudge factor that needs to be determined experimentally or fo
 The density of air: 1.225 kg/m^3
 
 CD:
-![Complex Dependencies Reference](../../assets/imgs/CAD/DragCoefficientTable.png)
+![Complex Dependencies Reference](../../assets/imgs/DragCoefficientTable.png)
 
 Linear drag has a closed form for its equations of motion while quadratic drag does not and must be found using numerical approximations like Euler's method.
 
@@ -122,8 +122,8 @@ Since I do not understand the math, this section will only provide how I underst
 
 Some reference images:
 
-![Magnus Effect Static Diagram](../../assets/imgs/CAD/MagnusEffectStationaryDiagram.png)
-![Magnus Effect Animation](../../assets/imgs/CAD/MagnusEffectAnimatedDiagram.gif)
+![Magnus Effect Static Diagram](../../assets/imgs/MagnusEffectStationaryDiagram.png)
+![Magnus Effect Animation](../../assets/imgs/MagnusEffectAnimatedDiagram.gif)
 
 My shortcut yet likely flawed way to remembering the direction of the effect:
 
@@ -135,7 +135,7 @@ Behind the projectile is a turbulent region of air. This region of air is "harde
 
 This phenomenon is reflected by the wobble of spinning tops.
 
-![Precession Diagram](/layout../../assets/imgs/CAD/PrecessionDiagram.png)
+![Precession Diagram](/layout../../assets/imgs/PrecessionDiagram.png)
 
 From an intermediate step in the above derivation:
 

@@ -21,7 +21,7 @@ hook/description
 
 **Relevance:** Belts are nifty devices to transport power over long distances. They can be used for reductions like gears but without the counter rotating property or as a conveyor belt to transport items.
 
-![Belt Pulley Diagram](../../assets/imgs/CAD/BeltPulleyDiagram.jpg)
+![Belt Pulley Diagram](../../assets/imgs/BeltPulleyDiagram.jpg)
 
 The pitch diameter of a pulley is determined by the equation:
 
@@ -47,7 +47,7 @@ Although the path length can be found by hand this can be time consuming and cha
 
 I would recommend finding the path length of a custom path using Solidworks. Essentially, the path can be drawn out and dimensioned and then after selecting each part of the path (or fitting a spline) the total length should be reported in the bottom right.
 
-![Path Length Diagram](../../assets/imgs/CAD/PathLengthDiagram.png)
+![Path Length Diagram](../../assets/imgs/PathLengthDiagram.png)
 
 To find the tooth count from the path length, simply divide by the pitch like we did before.
 
@@ -59,7 +59,7 @@ $$\frac{L}{p}=T$$
 
 When a single belt loop is formed by equal sized gears the equation for the path length simplifies.
 
-![Path Length Diagram](../../assets/imgs/CAD/PathLengthSpecialCaseDiagram.png)
+![Path Length Diagram](../../assets/imgs/PathLengthSpecialCaseDiagram.png)
 
 *Note:* this derivation was not found mathematically but only visually.
 
@@ -75,7 +75,7 @@ The path length is equal pi times the pitch diameter of the pulleys plus the sum
 
 For when a belt is connecting different sized pulleys.
 
-![Belt Length Diagram](../../assets/imgs/CAD/BeltLengthDiagram.jpeg)
+![Belt Length Diagram](../../assets/imgs/BeltLengthDiagram.jpeg)
 
 $$L=2cd+\frac{\pi}{2}(D+d)+\frac{(D-d)^2}{4cd}$$
 
