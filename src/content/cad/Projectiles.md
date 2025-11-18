@@ -25,7 +25,7 @@ In FRC, robots are often tasked with launching projectiles. Understanding how a 
 
 In a vacuum, gravity is the only force acting on the projectile, although the projectile may have some initial horizontal and vertical velocities.
 
-![Projectile Motion Diagram](../../assets/imgs/ProjectileMotionDiagram.gif)
+![Projectile Motion Diagram](../../../public/imgs/ProjectileMotionDiagram.gif)
 
 Net force equations:
 $$F_x=0$$
@@ -58,18 +58,22 @@ In standard form:
 $$y=\frac{-g}{2v_{x0}^2}x^2+\frac{v_{y0}}{v_{x0}}x$$
 
 Taking the derivative with respect to x:
-$$y'=\frac{-g}{v_{x0}^2}x+\frac{v_{y0}}{v_{x0}}$$
+$$\frac{dy}{dx}=\frac{-g}{v_{x0}^2}x+\frac{v_{y0}}{v_{x0}}$$
 
 Let *l* equal the distance to the target and *h* the height of the target.
 
 From our constraint:
-$$y'|_{x=l}=tan(\theta_f)$$
+$$\frac{dy}{dx}|_{x=l}=tan(\theta_f)$$
 
-In words this is y', the slope of the equation of motion, evaluated when x equals _l_ is equal to the tangent of the ending angle.
-$$y'|_{x=l}=\frac{-g}{v_{x0}^2}l+\frac{v_{y0}}{v_{x0}}=tan(\theta_f)$$
+In words this is dy/dx, the slope of the equation of motion, evaluated when x equals _l_ is equal to the tangent of the ending angle.
 
-Solving for $v_{y0}$ as if $v_{x0}$ will provide us a starting point to finding $v_{y0}$. Next, we would only need to find $v_{x0}$ in terms of known constants.
-$$v_{y0}=tan(\theta_f)v_{x0}+\frac{gl}{v_{x0}}$$
+$$
+\frac{dy}{dx} \Big|_{x=l} = \frac{-g}{v_{x0}^2} \, l + \frac{v_{y0}}{v_{x0}} = \tan(\theta_f)
+$$
+
+$$
+\text{Solving for }v_{y0} \text{as if } v_{x0} \text{will provide us a starting point to finding } v_{y0}. \text{Next, we would only need to find }v_{x0} \text{in terms of known constants.}
+$$v_{y_0}=\tan(\theta_f)v_{x_0}+\frac{gl}{v_{x_0}}$$
 
 Using the ending position we can write a constraint formula as:
 $$y(l)=h$$
@@ -91,16 +95,16 @@ And thus, we can substitute this into the $v_{y0}$ formula to yield an expressio
 
 Drag is an approximation of a very complex phenomenon. It is often simplified to two forms:
 
-Linear drag: $F_D=kv$
+$$\text{Linear drag: }F_D=kv$$
 
-Quadratic drag: $F_D=kv^2$
+$$\text{Quadratic drag: }F_D=kv^2$$
 
 _k_ is basically a fudge factor that needs to be determined experimentally or found using the formula $\frac{1}{2}\rho C_DA$ where $\rho$ is the density of air, $C_D$ is a number representing the "complex dependencies" which can be found using a table and referencing the shape of the projectile, and A is the reference/often cross-sectional area.
 
 The density of air: 1.225 kg/m^3
 
 CD:
-![Complex Dependencies Reference](../../assets/imgs/DragCoefficientTable.png)
+![Complex Dependencies Reference](../../../public/imgs/DragCoefficientTable.png)
 
 Linear drag has a closed form for its equations of motion while quadratic drag does not and must be found using numerical approximations like Euler's method.
 
@@ -122,8 +126,8 @@ Since I do not understand the math, this section will only provide how I underst
 
 Some reference images:
 
-![Magnus Effect Static Diagram](../../assets/imgs/MagnusEffectStationaryDiagram.png)
-![Magnus Effect Animation](../../assets/imgs/MagnusEffectAnimatedDiagram.gif)
+![Magnus Effect Static Diagram](../../../public/imgs/MagnusEffectStationaryDiagram.png)
+![Magnus Effect Animation](../../../public/imgs/MagnusEffectAnimatedDiagram.gif)
 
 My shortcut yet likely flawed way to remembering the direction of the effect:
 
@@ -135,7 +139,7 @@ Behind the projectile is a turbulent region of air. This region of air is "harde
 
 This phenomenon is reflected by the wobble of spinning tops.
 
-![Precession Diagram](/layout../../assets/imgs/PrecessionDiagram.png)
+![Precession Diagram](/layout../../../public/imgs/PrecessionDiagram.png)
 
 From an intermediate step in the above derivation:
 

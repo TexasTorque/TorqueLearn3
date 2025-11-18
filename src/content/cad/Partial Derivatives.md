@@ -5,7 +5,7 @@ author: "Michael Menezes"
 ---
 
 
-# Title
+# Partial Derivatives
 
 ## Intro
 
@@ -23,23 +23,29 @@ Partial derivatives are a simple yet powerful technique for evaluating how multi
 
 For a function, y(x), standard derivatives are notated as:
 
-$$y'=\frac{dy}{dx}=\frac{d}{dx}y$$
+$$\frac{dy}{dx}=\frac{d}{dx}y$$
 
 For a function, f(x, y), partial derivatives are notated as:
 
 $$f_x=\frac{\partial f}{\partial x}=\frac{\partial}{\partial x}f$$
 
-$f_x$ and variations are pronounced as "the partial derivative of f with respect to x." Since f was a function of x and y, f has two first order partials: $f_x$ and $f_y$.
+$$
+f\_x \text{ and variations are pronounced as the partial derivative of f with respect to x. Since f was a function of x and y, f has two first order partials: } f_x \text{ and } f_y.
+$$
 
 Partials are computed by holding all variables constant and only treating the variable we are taking the derivative of as a variable.
 
-Let's do an example:
+Let us do an example:
 
-For the function $f(x, y) = x^2 + y^3$, find all first order partials.
+$$ 
+\text{For the function } f(x, y) = x^2 + y^3 \text{, find all first order partials.}
+$$
 
 $$f_x = 2x$$
 
-When we take the derivative of $x^2 + y^3$, $y$ is a constant and the derivative of a constant is 0 so that term disappears.
+$$
+\text{When we take the derivative of } x^2 + y^3 \text{, y is a constant and the derivative of a constant is 0 so that term disappears.}
+$$
 
 $$f_y = 3y^2$$
 
@@ -59,12 +65,17 @@ $$f_{r_1}=\frac{\theta}{r_2}$$
 $$f_{r_2}=-\frac{r_1\theta}{r_2^2}$$
 
 So what does this tell us?
+$$
+f_{r_1} \text{ tells us that increasing the base sprocket will increase the wrist to arm angle by a factor of } \frac{\theta}{r_2}.
+$$
 
-$f_{r_1}$ tells us that increasing the base sprocket will increase the wrist to arm angle by a factor of $\frac{\theta}{r_2}$.
+$$
+f_{r_2} \text{ tells us that decreasing the wrist sprocket will increase the wrist to arm angle by a factor of } \frac{r_1\theta}{r_2^2}.
+$$
 
-$f_{r_2}$ tells us that decreasing the wrist sprocket will increase the wrist to arm angle by a factor of $\frac{r_1\theta}{r_2^2}$.
-
-Changing the base sprocket will increase the wrist to arm angle more than decreasing the wrist sprocket if $f_{r_1} > -f_{r_2}$.
+$$
+\text{Changing the base sprocket will increase the wrist to arm angle more than decreasing the wrist sprocket if } f_{r_1} > -f_{r_2}.
+$$
 
 $$\frac{\theta}{r_2} > \frac{r_1\theta}{r_2^2}$$
 $$r_2>r_1$$
@@ -75,9 +86,11 @@ Finally, we can conclude that increasing the base sprocket will increase the wri
 
 **Relevance:** The multivariate chain rule allows one to find the rate of change of nested functions much like the univariate chain rule.
 
-![Partial Derivative Tree Diagram](../../assets/imgs/PartialDerivativeTreeDiagram.jpg)
+![Partial Derivative Tree Diagram](../../../public/imgs/PartialDerivativeTreeDiagram.jpg)
 
-The above diagram shows a function z that is a function of x and y which are both functions of s and t: $z=f(x(s, t), y(s, t))$.
+$$
+\text{The above diagram shows a function z that is a function of x and y which are both functions of s and t: } z=f(x(s, t), y(s, t)).
+$$
 
 An example:
 
@@ -130,7 +143,7 @@ Thus,
 $$\theta_{3_{r_1}}=-\frac{\theta_1}{r_2}$$
 $$\theta_{3_{r_2}}=\frac{r_1\theta_1}{r_2^2}$$
 
-Following very similar steps to the previous section's FRC example:
+Following very similar steps to the FRC example in the previous section:
 
 $$-\frac{\theta_1}{r_2}>-\frac{r_1\theta_1}{r_2^2}$$
 $$r_2<r_1$$

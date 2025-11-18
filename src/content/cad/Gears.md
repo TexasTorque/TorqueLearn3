@@ -23,7 +23,7 @@ Gears are a simple yet effective way to transfer rotational power. Gears are use
 
 Gears have an intrinsic property known as diametral pitch *dp*. The diametral pitch is defined as the the number of teeth on a gear *T* divided by the pitch diameter *D*. Intuitively, diametral pitch can be understood as a conversion factor from diameter to tooth count. The pitch diameter is the diameter of a circle that intersects the teeth on the gear in the middle of the tooth height (technically it is when the tooth width is the same as the spacing between the teeth). Pitch diameter is easier explained with an image:
 
-![Thread Diagram](../../assets/imgs/ThreadDiagram.gif)
+![Thread Diagram](../../../public/imgs/ThreadDiagram.gif)
 
 Finding the diameter of a gear from dp:
 $$dp=\text{teeth}/\text{diameter}$$
@@ -44,7 +44,7 @@ $$rd=\frac{T_1+T_2}{2dp}+0.008$$
 
 Gear are typically arranged in two ways: side by side, or stacked.
 
-![Gear Arrangement Diagram](../../assets/imgs/GearArrangementDiagram.gif)
+![Gear Arrangement Diagram](../../../public/imgs/GearArrangementDiagram.gif)
 
 When gears are stacked, they have the same rotational velocity $\omega$. When gears are side by side, they have the same tangential speed $|v|$.
 
@@ -97,7 +97,7 @@ $$\vec{\tau}=\vec{r}\times \vec{F}$$
 $$\tau_0=\tau_1$$
 Since adjacent gears are touching at a point: $F_1=F_2=F_{12}$
 
-![Gear Torque Diagram](../../assets/imgs/GearTorqueDiagram.png)
+![Gear Torque Diagram](../../../public/imgs/GearTorqueDiagram.png)
 
 $$F_{12}=\tau_1/r_1$$
 $$\tau_2=-F_{12}r_2$$
@@ -129,22 +129,22 @@ Most Vex gears are half an inch wide and are made of 7075-T6 Aluminum. We can us
 
 | Equation | Comment |
 | ----------- | ----------- |
-| $D=M/V$ | definition of density |
-| $M=D*V$ | mass formula |
-| $d=T/dp$ | gear diameter formula |
-| $d=0.0254*T/dp$ | gear diameter formula in meters |
-| $r=0.0254*T/2dp$ | gear radius formula in meters |
-| $V=\pi r^2 h$ | volume of a cylinder |
-| $M=D*\pi r^2 h$ | mass of a cylinder |
-| $M=D*\pi (0.0254*T/2dp)^2 h$ | mass of a gear |
-| $M=D\pi h \frac{0.0254^2*T^2}{4dp^2}$ | simplified |
-| $D=2810\ kg/m^3$ | density of 7075 |
-| $h=0.0127$ | thickness of a gear |
-| $M= \left( \frac{T^2}{55*dp^2} \right)$ | substitution and simplification |
+| $$D=M/V$$ | definition of density |
+| $$M=D*V$$ | mass formula |
+| $$d=T/dp$$ | gear diameter formula |
+| $$d=0.0254*T/dp$$ | gear diameter formula in meters |
+| $$r=0.0254*T/2dp$$ | gear radius formula in meters |
+| $$V=\pi r^2 h$$ | volume of a cylinder |
+| $$M=D*\pi r^2 h$$ | mass of a cylinder |
+| $$M=D*\pi (0.0254*T/2dp)^2 h$$ | mass of a gear |
+| $$M=D\pi h \frac{0.0254^2*T^2}{4dp^2}$$ | simplified |
+| $$D=2810\ kg/m^3$$ | density of 7075 |
+| $$h=0.0127$$ | thickness of a gear |
+| $$M= \left( \frac{T^2}{55*dp^2} \right)$$ | substitution and simplification |
 
 The mass of a gear is the square of the tooth count divided by the product of 55 and the square of the diametral pitch. This means that the moment of inertia ($kgm^2$) of a gear is:
 
-$$I_{gear}=\frac{1}{2}\left( \frac{T^2}{55*dp^2} \right)\left( \frac{0.0254*T}{2dp} \right)^2$$
+$$I_{gear}=\frac{1}{2}\left(\frac{T^2}{55dp^2} \right)\left(\frac{0.0254T}{2dp} \right)^2$$
 $$I_{gear}=\left( \frac{T}{28.7dp} \right)^4$$
 
 #### Inertia in Reductions

@@ -20,3 +20,10 @@ img {
 table, th, td {
   vertical-align: top;
 }
+
+@font-face {
+  font-family: "MarketDeco";
+  src: url("/fonts/market_deco.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

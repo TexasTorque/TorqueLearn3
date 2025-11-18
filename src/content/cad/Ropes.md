@@ -90,11 +90,11 @@ From geometry, we know that there are 360 degrees or 2$\pi$ radians in a circle.
 
 $$p=2\pi\frac{z(t)}{t}$$
 
-![Helix Diagram](../../assets/imgs/HelixDiagram.jpg)
+![Helix Diagram](../../../public/imgs/HelixDiagram.jpg)
 
 So far, we have a helix but we still need to find a relation between _R(t)_ and the fleet angle.
 
-![Fleet Angle Diagram](../../assets/imgs/FleetAngleDiagram.png)
+![Fleet Angle Diagram](../../../public/imgs/FleetAngleDiagram.png)
 
 Using trigonometry, we can write:
 $$\tan\theta=\frac{pitch}{2*diameter}$$
