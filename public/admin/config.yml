@@ -1,8 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: master
-  repo: TexasTorque/TorqueLearn3
-  auth_type: implicit
 
 media_folder: "public/imgs"
 public_folder: "/imgs"
