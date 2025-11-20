@@ -1,10 +1,8 @@
 ---
-title: "Projectiles"
+title: Projectiles
 date: 2025-09-29
-author: "Michael Menezes"
+author: Michael Menezes
 ---
-
-
 # Projectiles
 
 ## Intro
@@ -33,8 +31,8 @@ $$F_y=-g$$
 
 The net force equations can be converted into equations of motion by integrating with respect to time twice to yield the parametric equations:
 
-$$x=v_{x0}t+x_0$$
-$$y=-\frac{1}{2}gt^2+v_{y0}t+y_0$$
+$$x=v*{x0}t+x_0$$
+$$y=-\frac{1}{2}gt^2+v*{y0}t+y_0$$
 
 In words, the horizontal displacement is equal to the initial horizontal velocity multiplied by time and added to the initial horizontal displacement. At the same time, the vertical displacement is equal to the negative acceleration of gravity divided by 2 multiplied by time squared and summed with the velocity term, the product of the initial vertical velocity and time, and the displacement term, the initial vertical displacement.
 
@@ -47,43 +45,43 @@ To calculate the reverse calculation we need to know what we know. We know the e
 Since we know the ending angle, we can derive a relation by forcing our equations of motion to have a certain ending angle/slope.
 
 Assuming that the projectile launches from the origin:
-$$x=v_{x0}t$$
-$$y=-\frac{1}{2}gt^2+v_{y0}t$$
+$$x=v*{x0}t$$
+$$y=-\frac{1}{2}gt^2+v*{y0}t$$
 
 The x equation can be solved for t and substituted into the y equation to yield the equation of motion in terms of x and y.
-$$t=\frac{x}{v_{x0}}$$
-$$y=\frac{-g}{2}(\frac{x}{v_{x0}})^2+v_{y0}(\frac{x}{v_{x0}})$$
+$$t=\frac{x}{v*{x0}}$$
+$$y=\frac{-g}{2}(\frac{x}{v*{x0}})^2+v*{y0}(\frac{x}{v*{x0}})$$
 
 In standard form:
-$$y=\frac{-g}{2v_{x0}^2}x^2+\frac{v_{y0}}{v_{x0}}x$$
+$$y=\frac{-g}{2v*{x0}^2}x^2+\frac{v*{y0}}{v_{x0}}x$$
 
 Taking the derivative with respect to x:
-$$\frac{dy}{dx}=\frac{-g}{v_{x0}^2}x+\frac{v_{y0}}{v_{x0}}$$
+$$\frac{dy}{dx}=\frac{-g}{v*{x0}^2}x+\frac{v*{y0}}{v_{x0}}$$
 
 Let *l* equal the distance to the target and *h* the height of the target.
 
 From our constraint:
 $$\frac{dy}{dx}|_{x=l}=tan(\theta_f)$$
 
-In words this is dy/dx, the slope of the equation of motion, evaluated when x equals _l_ is equal to the tangent of the ending angle.
+In words this is dy/dx, the slope of the equation of motion, evaluated when x equals *l* is equal to the tangent of the ending angle.
 
 $$
-\frac{dy}{dx} \Big|_{x=l} = \frac{-g}{v_{x0}^2} \, l + \frac{v_{y0}}{v_{x0}} = \tan(\theta_f)
+\frac{dy}{dx} \Big|*{x=l} = \frac{-g}{v*{x0}^2} , l + \frac{v*{y0}}{v*{x0}} = \tan(\theta_f)
 $$
 
 $$
-\text{Solving for }v_{y0} \text{as if } v_{x0} \text{will provide us a starting point to finding } v_{y0}. \text{Next, we would only need to find }v_{x0} \text{in terms of known constants.}
-$$v_{y_0}=\tan(\theta_f)v_{x_0}+\frac{gl}{v_{x_0}}$$
+\text{Solving for }v*{y0} \text{as if } v*{x0} \text{will provide us a starting point to finding } v*{y0}. \text{Next, we would only need to find }v*{x0} \text{in terms of known constants.}
+$$v*{y_0}=\tan(\theta_f)v*{x*0}+\frac{gl}{v*{x_0}}$$
 
 Using the ending position we can write a constraint formula as:
 $$y(l)=h$$
-$$y(l)=\frac{-g}{2v_{x0}^2}l^2+\frac{v_{y0}}{v_{x0}}l=h$$
+$$y(l)=\frac{-g}{2v*{x0}^2}l^2+\frac{v*{y0}}{v_{x0}}l=h$$
 
-Now we can eliminate $v_{y0}$.
-$$\frac{-gl^2}{2v_{x0}^2}+\frac{tan(\theta_f)v_{x0}+\frac{gl}{v_{x0}}}{v_{x0}}l=h$$
+Now we can eliminate $v*{y0}$.
+$$\frac{-gl^2}{2v*{x0}^2}+\frac{tan(\theta*f)v*{x0}+\frac{gl}{v*{x0}}}{v*{x0}}l=h$$
 
-Solving for $v_{x0}$ gives:
-$$v_{x0}=\sqrt{\frac{gl^2/2}{h-tan(\theta_f)l}}$$
+Solving for $v*{x0}$ gives:
+$$v*{x0}=\sqrt{\frac{gl^2/2}{h-tan(\theta_f)l}}$$
 
 And thus, we can substitute this into the $v_{y0}$ formula to yield an expression only in terms of knowns. We have successfully reversed our projectile motion equation!
 
@@ -99,12 +97,9 @@ $$\text{Linear drag: }F_D=kv$$
 
 $$\text{Quadratic drag: }F_D=kv^2$$
 
-_k_ is basically a fudge factor that needs to be determined experimentally or found using the formula $\frac{1}{2}\rho C_DA$ where $\rho$ is the density of air, $C_D$ is a number representing the "complex dependencies" which can be found using a table and referencing the shape of the projectile, and A is the reference/often cross-sectional area.
+*k* is basically a fudge factor that needs to be determined experimentally or found using the formula $\frac{1}{2}\rho C_DA$ where $\rho$ is the density of air, $C_D$ is a number representing the "complex dependencies" which can be found using a table and referencing the shape of the projectile, and A is the reference/often cross-sectional area.
 
 The density of air: 1.225 kg/m^3
-
-CD:
-![Complex Dependencies Reference](../../../public/imgs/DragCoefficientTable.png)
 
 Linear drag has a closed form for its equations of motion while quadratic drag does not and must be found using numerical approximations like Euler's method.
 
@@ -127,6 +122,7 @@ Since I do not understand the math, this section will only provide how I underst
 Some reference images:
 
 ![Magnus Effect Static Diagram](../../../public/imgs/MagnusEffectStationaryDiagram.png)
+
 ![Magnus Effect Animation](../../../public/imgs/MagnusEffectAnimatedDiagram.gif)
 
 My shortcut yet likely flawed way to remembering the direction of the effect:
