@@ -13,7 +13,10 @@ To launch a dev server, navigate to the root folder and run the command `npm run
 Other devices can connect to this through standard port forwarding.
 
 ### Contribution
-After I (Davis Jenney) have graduated, I will very likely not be able to participate in its facilitation and development. Hence, Decap CMS and Netlify have been used. Subsection mentors and Mr. Wolf (or any permitted individual) can add information to the wiki through adding, editing, or removing pages. This is password protected and all authors are documented, alongside a time and date. GitHub also stores any previous versions that can be restored if need be. Documentation for Decap CMS can be found [here](https://decapcms.org/docs/intro/).
+After I (Davis Jenney) have graduated, I will very likely not be able to participate in its facilitation and development. Hence, Decap CMS and Netlify have been used. Subsection mentors and Mr. Wolf (or any permitted individual) can add information to the wiki through adding, editing, or removing pages. This is password protected and all authors are documented, alongside a time and date. GitHub also stores any previous versions that can be restored if need be. Documentation for Decap CMS can be found [here](https://decapcms.org/docs/intro/).\
+
+## Registration
+To register an editor, go to the Netlify application and invite a user through the Identiy section in the settings. Using their email, register them and make them an editor. Upon them accepting it, send a password reset email to them to let them set a password. From there, they can sign in through the admin page.
 
 # Authors
 [Davis Jenney](https://github.com/OrangeTurtle77) (2023-2027)
