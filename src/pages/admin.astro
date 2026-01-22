@@ -10,6 +10,7 @@ import "../components/common_css.css";
     <meta name="robots" content="noindex" />
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <title>TorqueLearn3 Manager</title>
+
     <style>
       /* Simple styling for the login button */
       #login-button {
@@ -29,13 +30,16 @@ import "../components/common_css.css";
         background-color: #005bb5;
       }
     </style>
+
+    
+    <!-- Netlify Identity widget -->
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <!-- DecapCMS script -->
     <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
 
-    <!-- Netlify Identity widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-    ></script>
   </body>
 </html>

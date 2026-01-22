@@ -14,9 +14,14 @@ const other = await getCollection("other");
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>Torque Learn - Home</title>
+        <link rel="icon" type="image/svg+xml" href="/public/favicon.ico"/>
+
+        <script
+            type="text/javascript"
+            src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+        ></script>
     </head>
     <body>
         <Header />
@@ -28,7 +33,9 @@ const other = await getCollection("other");
             </p>
             <p>
                 If you wish to contribute, talk to your subsection mentor or Mr.
-                Wolf. If you have permission, you can edit <a href="/admin">here</a>.
+                Wolf. If you have permission, you can edit <a href="/admin"
+                    >here</a
+                >.
             </p>
         </div>
 
