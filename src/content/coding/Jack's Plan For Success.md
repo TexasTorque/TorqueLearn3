@@ -1,32 +1,26 @@
 ---
-title: "Jack's Plan for Success"
-date: 2025-09-29
-author: "Jack Pittenger"
+title: Planning for Success
+date: 2026-02-18T16:42:00.000-06:00
+author: Davis Jenney
 ---
 
-# Jack's Plan for Success
+# Planning for Success
 
-During a competition, programmers are usually only given a couple days with the robot to get it fully operational. As such, it is imperative to create a streamlined development procedure.
+During a competition, programmers do not have a large amount of time to prepare a robot before other subsections need to begin work on it. This leaves programming with the issue of maintaining organization.
 
 ### Roles
 
-Each programmer requires a *role*. Roles dictate what their duties. Below is a list of the usual roles:
+When developing season robots, communication is key. A single student will have trouble developing the entire robot, but a small team can split up jobs and manage various subsystems.
 
-* **Lead** - The Lead orchestrates development of the entire robot.
-* **Assistant Lead** - The Assistant Lead assists the Lead in managing the programmers.
-* **Programmer** - A Programmer is a general role that is further divided into sub-roles:
-    * *Ports and Constants* - Responsible for determining the robot's ports and constants.
-    * *Input* - Responsible for setting up the Input.java file.
-    * *Robot.java* - Responsible for setting up the Robot.java file.
-    * *Feedback* - Responsible for setting up the Feedback.java file.
-    * *~Subsystem~* - Responsible for setting up the specified subsystem.
-* **Rookie** - A Rookie is a general role for new additions to the programming team which may lack enough knowledge to beneficially contribute during the short time frame. They can shadow the programming section.
+* **Lead** - The Lead is typically the subsection student leader, or whomever is working on the robot the most.
+* **Programmers**: Programmers should focus first on an individual section rather than skipping around. They should add functionality to their system and utilize consistent inputs used in previous seasons if possible. After their system is deemed sufficient by the **Lead**, then they may work with others to finish development of alternative systems or to optimize their own.
 
-### Boilerplate
+### Foundation
 
-Each programmer should implement _boilerplate_ code first, instead of aiming for functionality first. This includes creating all instance variables and getters/setters before writing main logic as this enables other programmers to interface with your part instantly.
+Every programmer, before coding any logic, should first create any mutators/accessor methods first. This allows for others to assist development on your subsystem more easily if you have not developed it fully yet.
 
 ### Asking for help
 
-Do that. :)
+Don't be afraid to ask for help. However, also don't be afraid of waiting it out a tad bit and trying to solve it yourself. If you can't solve it, work up the chain instead of going straight to the top. 
 
+It's recommended not to use AI, however, as it does not have knowledge of *torquelib*.
