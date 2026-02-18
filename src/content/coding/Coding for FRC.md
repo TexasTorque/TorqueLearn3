@@ -1,12 +1,12 @@
 ---
-title: "Coding for FRC"
-date: 2025-09-29
-author: "???"
+title: Coding for FRC
+date: 2026-02-18T17:04:00.000-06:00
+author: Davis Jenney
 ---
 
 # Coding for FRC
 
-Before we program a robot, we are going to need a tour of the FRC Programming Enviorment. FRC uses a library called [WPILib](https://docs.wpilib.org/en/stable/) to manage the enviorment.
+Before we program a robot, make sure you have the items installed as detailed in [Getting Started](/coding/getting-started).
 
 ## How to use WPILib
 
@@ -14,35 +14,23 @@ The version of Visual Studio Code that you installed earlier has WPILib built in
 
 ## Making a New Project
 
-Before you make a new project, make sure you or someone on your team has experience in the [Java](https://www.w3schools.com/java/) programming language. You can also program FRC Robots with C++, but Java is generally easier for development, and has a negligible diffrence in performance. 
-To make a project, you click the WPILib button, and select ``WPILib: Create a new project``. This will open up the project wizard, allowing you to select a language. This will make the new project with all the correctly formatted build files, allowing you to build and deploy code using the WPILib button and commands. You can also use the wizard to generate example projects, which can be great for observing the way the projects are built.
+Before you get into actually coding, first:
+* Evaluate: Is this going to be a repo everyone uses? 
+  * Yes: Create a repo in the TexasTorque GitHub (if you don't have access, talk to your subsection student mentor) and create a new repository. Clone the TorqueTemplate, clone to your computer, and begin work. 
+  * No: Are you going to need a repo for this?
+    * Yes: Go to your profile, then your repositories, then create a new repo. Clone from TorqueTemplate, clone to computer, and begin work.
+    * No: Clone TorqueTemplate and begin work. Just do not run any commits.
+
+Now what?
 
 **NOTE: Assume Java from now on!**
 
 ## Project Layout
 
-In a project, there is are two important auto-generated files: Main.java, and Robot.java.
+In TorqueTemplate, you are given an empty robot. It, assuming you cloned recursively, will have access to *torquelib* and holds proper file structure. But what do these files do?
 
-* Main.java calls Robot.java, just leave it alone.
-* Robot.java has all the methods called by the RoboRIO firmware.
-
-These functions are where your code goes. At Texas Torque, we have a way of organizing systems into diffrent classes and managing singleton instances, but hypothetically, you could just write code in the methods.
-
-An easy way of thinking about these methods is with [Arudino](https://www.arduino.cc/). In an Arduino sketch, there are two default methods. They look like this:
-
-```cpp
-// Arduino sketches are a version of C++
-
-// Called on initialization
-void setup() {
-    // Serial.print(); is the method to print to Arduino console
-    Serial.print("This is called once at the beginning");
-}
-
-// Called on every update in the loop
-void update() {
-    Serial.print("This is called every time the Arudino loops");
-}
-```
-
-In the FRC code, there are different types of these functions for the different states the robot can be in.
+* Main.java calls Robot.java. This is what Java itself will run, so leave it alone.
+* Robot.java is where you will add subsystems so Java knows where to run code.
+* Ports.java is a constant file. Every motor on a robot has a port, and the variables you declare here, assuming you import it, allows you to maintain global consistency throughout files. If done correctly, fixing a port here fixes it everywhere.
+* Input.java controls controller inputs. We utilize Xbox controllers, which utilize two analog sticks, a D-Pad, two triggers, two paddles, and the four buttons. While you could theoretically use the Xbox button, pause button, and window button, it is uncommon to do so. Lastly, it will also handle any rumble/vibrations if needed.
+* /Subsystems is a folder for, you guessed it, subsystems. All subsystem classes, each as their own java file, will go in here. Remember to add the subsystem to *Robot.java* to ensure it is actually used.
