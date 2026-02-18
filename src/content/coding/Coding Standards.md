@@ -1,34 +1,28 @@
 ---
-title: "Coding Standards"
-date: 2025-09-29
-author: "Justus Languell"
+title: Coding Standards
+date: 2026-02-18T17:33:00.000-06:00
+author: Davis Jenney
 ---
 
 # Programming style and best practices
 
-## Important Advice
+## General Tips
 
-- Simple > Complicated
-- Explicit > Implicit
-- Ability to read code > Ability to write code
-- Comments don't explain your code to humans, code explains your comments to the computer
-- The best procedure is no procedure
-- Don't overuse a programming paradigm (OOP, functional)
-- It's not what you know, it's what you do with what you know
-- Leet Code doesn't mean much of anything
-- The most valuable skill is the ability to figure things out
-- Before you ask what something does, think through it
-- That said, if you are really stuck, *please* ask questions
+- Simple is better than complicated.
+- Explicit over implicit.
+- Ability to read code is better than "more optimal".
+- Comments allow anyone to understand the code.
+- Stick through it. Don't turn to AI or a friend immediately if an issue arises. Troubleshoot it for a while. That said, if you are really stuck, ask questions in chain of authority.
 
-## Best Practices
+## General Practices
 
-### Use getters and setters
+### Use Accessors (Getters) and Mutators (Setters)
 
-Avoid unnecessary public variables, getters, and setters, but use getters and setters to control access to private members.
+Java practices encapsulation, or the practice of protecting any code within a class. Thus, you cannot access a variable of a class from another. You have to use a getter. To avoid clutter, only use necessary variables, getters, and setters. If it's not used, get rid of it.
 
-### Curly braces go on the same line as the statement they are tied to
+### Curly Braces
 
-Except for really long function declarations
+For all curly braces, they should go on the same line that they are attached to. 
 
 ```java
 public class Example {
@@ -40,9 +34,11 @@ public class Example {
 }
 ```
 
-### Lines should not extend over 80 characters
+Unless...
 
-Examples of how to deal with long lines. This doesn't matter too much, you can do it many ways.
+### Lines over 80 characters
+
+If a line is moving offscreen, try cutting it up. This should only occur in function calls, class constructors, etc.
 
 ```java
 public static ArrayList<String> reallyLongFunction(double thisArgument, 
@@ -57,38 +53,41 @@ private ArrayList<double>
                  const String thatArgument, 
                  ThisClass anArgument) 
 {
-
+// implementation here
 }
 ```
 
-### Constants are named in screaming case
+### Naming Practices
+
+Constants should be in all caps, variables/functions in camel case, and classes as capitalized.
 
 ```java
-String THIS_IS_SCREAMING_CASE = "Helicopter";
+String CONSTANT_A = "Good!";
+String constant_B = "Bad!";
+
+String robotName = "Good!";
+String robotname = "Bad!";
+String RobotName = "Bad!";
+
+class RobotClass ...   // Good!
+class robotClass ...   // Bad!
+class robot_class ...  // Bad!
 ```
 
-### Classes start with a capital letter, variables start with lower case
+### Comments
+
+We prefer to use JavaDoc comments. This allows for functions to be easily understood when they become more complex. Obviously, this is unnecessary for functions such as getters or setters. 
 
 ```java
-ThisIsAClass thisIsAVariable = new ThisIsAClass();
-```
 
-### Use JavaDoc when you can
-
-```java
-/**
- * This says what the functions does
- * 
- * @param int This describes the parameter
- * @return This describes the return
- * 
- * @author Just don't use this w/o asking
+/** 
+ *
+ * This function flips the value of an int.
+ *
+ * @param  initial the int to be flipped
+ * @return         the flipped int
  */
-int thisIsAFunction(int a) {
+int flipInt(int initial) {
     return -a;
 }
 ```
-
-## Credits
-
-Initially written by [Justus Languell](https://github.com/Juicestus) in August 2021
