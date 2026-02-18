@@ -1,34 +1,28 @@
 ---
-title: "Scouting Guide"
-date: 2025-09-29
-author: "???"
+title: Scouting Guide
+date: 2026-02-18T17:39:00.000-06:00
+author: Davis Jenney
 ---
 
 # Scouting Guide
 
-Here's a guide to scouting. Tips and tricks.
+Scouting is fundamental in competitions. In the first half, teams compete in random teams and earn individual points depending on how they and their team perform. Then, in the second half, teams are formed by the students. Thus, it is important to know how any given team performs.
 
-1. Keep your eye on the ball. A missed auto can be a huge pain.
+When scouting, it is imperative to follow these rules:
 
-2. Say when you miss something, or just don't submit it.
+1. Keep your eye on the robot. A missed auto or several points can skew data.
 
-3. Sit next to scouters from other teams. That way you can ask them for information if you miss something.
+2. We work in shifts, so know when yours begins and ends.
 
-4. Make shifts, it reduces fatigue
+3. Stay off of games and internet for the moment. It's only thirty minutes or so and it's better to have full data.
 
-5. When you make shifts, account for the fact that a match in week 1 takes twice as long as a match at champs (longer shifts as the season goes on)
+4. When you get up to go to the bathroom or whatever, have someone else scout the round for you.
 
-6. Don't rely on internet
+5. Know how to use the scouting app. If you have a question, ask.
 
-7. When you get up to go to the bathroom or whatever, have someone else scout the round for you
+6. Add text comments. If the intake falls off, write that down.
 
-8. Always have at least 2 backups in stands
-
-9. Make sure everyone knows the shift schedule, and how to operate the scouting software
-
-10. Add text comments. If the intake falls off, write that down. Seriously.
-
-11. Make sure people know how important scouting is. Scouting is not punishment, it's an important part of being on the team. Everyone has done it. 
+PS. Scouting is not a punishment. Every rookie and a lot of 2nd years go through it.
 
 
 
