@@ -6,7 +6,7 @@ author: "Omar Afzal"
 
 # RoboRIO
 
-![RoboRIO](/static/imgs/vendors/roborio.png)
+![RoboRIO](../../../public/imgs/roborio.png)
 
 ## What is a RoboRIO?
 

@@ -8,7 +8,7 @@ author: "???"
 
 The navX is an integrated accelerometer, gyroscope, and magnetometer that allows tracking the position of the robot.
 
-![navX](/static/imgs/vendors/navx.png)
+![navX](../../../public/imgs/navx.png)
 
 ### Board
 

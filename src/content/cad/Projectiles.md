@@ -135,7 +135,7 @@ Behind the projectile is a turbulent region of air. This region of air is "harde
 
 This phenomenon is reflected by the wobble of spinning tops.
 
-![Precession Diagram](/layout../../../public/imgs/PrecessionDiagram.png)
+![Precession Diagram](../../../public/imgs/PrecessionDiagram.png)
 
 From an intermediate step in the above derivation:
 

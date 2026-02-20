@@ -31,7 +31,7 @@ if (controller.getSolenoidButton()) doubleSolenoid.set(Value.kForward);
 else doubleSolenoid.set(Value.kReverse);
 ```
 
-![SolenoidWiringDiagram](/static/imgs/pneumatics-subsystem.png)
+![SolenoidWiringDiagram](../../../public/imgs/pneumatics-subsystem.png)
 
 ## Wiring
 
