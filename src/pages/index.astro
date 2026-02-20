@@ -3,10 +3,20 @@ import Header from "../components/header.astro";
 import "../components/common_css.css";
 import { getCollection } from "astro:content";
 
-const cad = await getCollection("cad");
-const coding = await getCollection("coding");
-const mechanical = await getCollection("mechanical");
-const other = await getCollection("other");
+
+// IMPORT AND SORT BY TITLES
+const cad = (await getCollection("cad")).sort(
+    (a, b) => a.data.title.toLowerCase().localeCompare(b.data.title.toLowerCase())
+);
+const coding = (await getCollection("coding")).sort(
+    (a, b) => a.data.title.toLowerCase().localeCompare(b.data.title.toLowerCase())
+);
+const mechanical = (await getCollection("mechanical")).sort(
+    (a, b) => a.data.title.toLowerCase().localeCompare(b.data.title.toLowerCase())
+);
+const other = (await getCollection("other")).sort(
+    (a, b) => a.data.title.toLowerCase().localeCompare(b.data.title.toLowerCase())
+);
 ---
 
 <!doctype html>
@@ -18,13 +28,16 @@ const other = await getCollection("other");
         <title>Torque Learn - Home</title>
         <link rel="icon" type="image/svg+xml" href="/public/favicon.ico"/>
 
+        <!-- This allows for onboarding. -->
         <script
             type="text/javascript"
             src="https://identity.netlify.com/v1/netlify-identity-widget.js"
         ></script>
     </head>
     <body>
+        <!-- Top of the Page (Logo, title, etc) -->
         <Header />
+
         <div class="item">
             <p>
                 Welcome to Texas Torque! Everyone, from rookies to experienced,
@@ -39,6 +52,7 @@ const other = await getCollection("other");
             </p>
         </div>
 
+        <!-- Make a grid for each section to get some. -->
         <div class="item" style="margin-top: 0.1em">
             <table style="width: 100%">
                 <colgroup>

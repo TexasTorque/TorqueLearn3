@@ -4,7 +4,7 @@ date: 2026-02-20T16:38:00.000-06:00
 author: Davis Jenney
 ---
 
-# Configuring Visual Studio Code
+# How to Setup VSCode Code
 
 **Note: VS Code Docs located [here](https://code.visualstudio.com/docs). Please check this first before asking questions.**
 
